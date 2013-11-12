@@ -3,7 +3,7 @@
     <%= f.label :content, "Option:" %>
     <%= f.text_area :content, :rows => 3 %>
     <%= f.label :value, "Value (between 0-1)" %>
-    <%= f.number_field :value %>
+    <%= f.text_field :value, value: number_with_precision(f.object.value, precision: 2) %>
     <%#= f.check_box :_destroy %>
     <%#= f.label :_destroy, "Remove Option" %>
 </div>		   	  
