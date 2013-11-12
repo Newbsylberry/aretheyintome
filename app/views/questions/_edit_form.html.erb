@@ -15,12 +15,6 @@
     <%= f.label :content %><br>
     <%= f.text_area :content, :rows => 6 %>
   </div>
-  
-  <%= f.fields_for :options do |build| %>
-    <%= render 'layouts/question_options', :f => build %>
-  <% end %>
-  
-  
 
   <div class="actions">
     <%= f.submit %>

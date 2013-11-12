@@ -9,9 +9,9 @@
 	<li><%= option.content %></li>
       </ul>
       <% end %>
-      <%= link_to 'back', questions_path %>
-      <%= link_to 'Edit', edit_question_path(@question) %> |
-      <%= link_to 'New Option', new_question_option_path(@question) %>
+      <%= link_to 'Back to Question List', questions_path %> |
+      <%= link_to 'Edit Question', edit_question_path(@question) %> |
+      <%= link_to 'Edit and Add Options', question_options_path(@question) %>
     <% else %>
       <%= link_to 'Edit', edit_question_path(@question) %> |
       <%= link_to 'New Option', new_question_option_path(@question) %>
