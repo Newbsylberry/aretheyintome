@@ -1,4 +1,7 @@
 Aretheyintome::Application.routes.draw do
+  
+  root 'questions#index'
+
   resources :questions do
     resources :options
   end
