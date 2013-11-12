@@ -1,0 +1,4 @@
+class ChangeIntegerFormatInOptions < ActiveRecord::Migration
+  def change
+  end
+end
