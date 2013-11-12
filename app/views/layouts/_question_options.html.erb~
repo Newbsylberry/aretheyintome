@@ -1,0 +1,9 @@
+<div class="field">
+    <%= f.hidden_field :question_id, :value=>params[:question_id] %>
+    <%= f.label :content, "Option:" %>
+    <%= f.text_area :content, :rows => 3 %>
+    <%= f.label :value, "Value (between 0-1)" %>
+    <%= f.number_field :value %>
+    <%= f.check_box :_destroy %>
+    <%= f.label :_destroy, "Remove Option" %>
+</div>		   	  

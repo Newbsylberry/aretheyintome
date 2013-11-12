@@ -1,6 +1,6 @@
 <h1>Editing question</h1>
 
-<%= render 'form' %>
+<%= render 'edit_form' %>
 
-<%= link_to 'Show', @question %> |
-<%= link_to 'Back', questions_path %>
+<%= link_to 'Show Question and Options', @question %> |
+<%= link_to 'Edit and Add Question Options', question_options_path(@question) %>

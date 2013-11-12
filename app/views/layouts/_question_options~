@@ -1,0 +1,7 @@
+<div class="field">
+    <%= build.hidden_field :question_id, :value=>params[:question_id] %>
+    <%= build.label :content, "Option:" %>
+    <%= build.text_area :content, :rows => 3 %>
+    <%= build.label :value, "Value (between 0-1)" %>
+    <%= build.number_field :value %>
+</div>		   	  

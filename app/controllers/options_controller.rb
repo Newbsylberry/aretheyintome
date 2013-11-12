@@ -61,7 +61,7 @@ class OptionsController < ApplicationController
   def destroy
     @option.destroy
     respond_to do |format|
-      format.html { redirect_to options_url }
+      format.html { redirect_to question_options_path }
       format.json { head :no_content }
     end
   end
